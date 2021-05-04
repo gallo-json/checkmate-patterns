@@ -463,9 +463,11 @@ class CheckmatePattern:
 
     def bishop_and_knight(self, available_squares, square):
         if all(not self.is_blocked(i) for i in available_squares):
-
+            pass
+    
     def bishop_and_knight_corner(self, available_squares, squares):
         if all(not self.is_blocked(i) for i in available_squares):
+            pass
     
     def find_checkmate_pattern(self):
         losing_side = not self.winner()
@@ -595,6 +597,3 @@ class CheckmatePattern:
                 except TypeError:
                     # 100% error proof
                     pass
-
-
-CheckmatePattern('kR6/P7/1P6/8/8/8/K7/1R6 b - - 0 1').find_checkmate_pattern()
