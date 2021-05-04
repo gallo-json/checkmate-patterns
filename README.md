@@ -11,7 +11,7 @@ You can also use the Lichess API so it can give you a rundown of the different t
 
 ### Checkmate Patterns
 
-Definitions of each type of checkamte taken from the wikipedia page:
+Definitions of each type of checkmate taken from the wikipedia page:
 
 https://en.wikipedia.org/wiki/Checkmate_pattern 
 
@@ -22,3 +22,7 @@ Some famous examples include the back-rank mate and smothered mate.
 - Python3
 - Berserk (Lichess API)
 - PyChess
+
+## Run
+
+`python3 main.py`
