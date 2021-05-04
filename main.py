@@ -4,6 +4,9 @@ import io
 import berserk
 import json
 
+mate_names = ["Pawn mate", "Other"]
+mate_frequencies = [0] * len(mate_names)
+
 with open('token.json') as f:
     token = json.load(f)
 
@@ -32,6 +35,7 @@ for i in range(len(games)):
     except KeyError:
         # If the user played against stockfish it messes up the keys
         pass
+    
 print(player, 'has given', len(gave_checkmate_moves), 'checkmates total.')
 print(player, 'has recieved', len(recieved_checkmate_moves), 'checkmates total\n')
 
